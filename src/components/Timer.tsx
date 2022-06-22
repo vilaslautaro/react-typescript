@@ -9,14 +9,13 @@ export const Timer = ({ milliseconds }: TimerArgs ) => {
   const ref = useRef<NodeJS.Timeout>();
 
   useEffect(() => {
-    console.log("useEffect");
     ref.current && clearInterval(ref.current);
     ref.current = setInterval(() => setSeconds((s) => s + 1), milliseconds);
   }, [milliseconds]);
 
   return (
     <>
-      <h4>
+      <h4 className="mt-5">
         Timer: <small>{seconds}</small>
       </h4>
     </>

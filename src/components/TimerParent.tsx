@@ -6,7 +6,7 @@ export const TimerParent = () => {
 
   return (
     <>
-      <span>Milisegundos 1000</span>
+      <span className="mt-5">Milisegundos 1000</span>
       <br />
       <button
         className="btn btn-outline-success"
